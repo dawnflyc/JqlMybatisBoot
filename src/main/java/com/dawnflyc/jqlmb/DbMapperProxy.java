@@ -1,6 +1,7 @@
 package com.dawnflyc.jqlmb;
 
 import com.dawnflyc.jqlapi.sql.ISqlHandle;
+import com.dawnflyc.jqlmb.DbMapper;
 
 import java.util.List;
 import java.util.Map;

@@ -14,14 +14,14 @@ import java.util.Date;
 /**
  * 将LocalDateTime转换位Date
  */
+@Component
 @MappedTypes(value = {Timestamp.class, LocalDateTime.class})
 public class DateMappedTypes extends BaseTypeHandler<Date> {
 
-
-//    @Autowired
-//    public void register(SqlSessionFactory sqlSessionFactory) {
-//        sqlSessionFactory.getConfiguration().getTypeHandlerRegistry().register(this);
-//    }
+    @Autowired
+    public void register(SqlSessionFactory sqlSessionFactory) {
+        sqlSessionFactory.getConfiguration().getTypeHandlerRegistry().register(this);
+    }
 
 
     @Override
